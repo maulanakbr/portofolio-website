@@ -3,9 +3,9 @@ import Container from "./Container";
 
 const MainSection = () => {
   return (
-    <Container>
+    <section className="mb-12 lg:px-20">
       <div className="flex h-[83vh] w-full items-center justify-center">
-        <div className="grid w-full overflow-hidden md:w-[70vw]">
+        <div className="grid w-full md:w-[70vw]">
           <h1 className="mb-2 p-4 text-center font-bold md:text-left">
             Hi, I am Maulana Akbar Yudistika
           </h1>
@@ -20,7 +20,7 @@ const MainSection = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
 
