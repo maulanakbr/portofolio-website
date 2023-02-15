@@ -111,7 +111,7 @@ const Navbar = () => {
         </div>
       ) : (
         <div
-          className="fixed right-4 z-10 cursor-pointer p-2 md:hidden"
+          className="fixed right-5 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 md:hidden"
           onClick={() => setToggle(!toggle)}
         >
           <AiOutlineClose size={35} />

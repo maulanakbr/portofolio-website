@@ -14,7 +14,7 @@ const ProjectCard = ({
   usingLibs,
 }: ProjectCardProps) => {
   return (
-    <section className="mx-auto mb-8 flex w-[78vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-lg outline outline-2 outline-offset-4 md:mb-4 lg:mx-0 lg:h-[72vh] lg:w-[25vw] hover:lg:h-[90vh]">
+    <section className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-lg outline outline-2 outline-offset-4 md:mb-4 lg:mx-0 lg:h-[72vh] lg:w-[25vw] hover:lg:h-[90vh]">
       <div className="h-full w-full flex-col">
         <div className="group relative mb-4 h-[40vh] overflow-hidden hover:h-[65vh] lg:h-[50vh]">
           <a href={webUrl} aria-label={name} target="blank" rel="noreferrer">
