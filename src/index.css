@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+  body {
+    @apply bg-primary-100 font-inter text-primary-1000;
+  }
+
+  /* Scale: 1.333 - Perfect Fourth
+
+  67.34px,
+  50.52px,
+  37.90px,
+  28.43px,
+  21.33px,
+  16.00px,
+  12.00px,
+  9.00px,
+  6.76px,
+
+  */
+
+  h1 {
+    @apply text-[67.34px] leading-none;
+  }
+
+  h2 {
+    @apply text-[50.52px] leading-none;
+  }
+
+  h3 {
+    @apply text-[37.90px] leading-none;
+  }
+
+  h4 {
+    @apply text-[28.43px] leading-none;
+  }
+
+  h5 {
+    @apply text-[21.33px] leading-none;
+  }
+}
+
+/* body {
+  background-image: url("./assets/img01.jpg");
+  background-size: "cover";
+  background-repeat: round;
+} */
