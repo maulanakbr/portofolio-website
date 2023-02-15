@@ -104,17 +104,17 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {!toggle ? (
         <div
-          className="absolute right-5 z-10 cursor-pointer p-2 md:hidden"
+          className="cursor-pointer p-2 md:hidden"
           onClick={() => setToggle(!toggle)}
         >
           <SlMenu size={30} />
         </div>
       ) : (
         <div
-          className="fixed right-5 z-10 cursor-pointer p-2 md:hidden"
+          className="fixed right-4 z-10 cursor-pointer p-2 md:hidden"
           onClick={() => setToggle(!toggle)}
         >
-          <AiOutlineClose size={30} />
+          <AiOutlineClose size={35} />
         </div>
       )}
     </nav>
