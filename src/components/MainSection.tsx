@@ -5,7 +5,7 @@ const MainSection = () => {
     <section className="mb-12 px-2 md:px-6 lg:px-20">
       <div className="flex h-[83vh] w-full items-center justify-center">
         <div className="grid w-full lg:w-[70vw]">
-          <h1 className="mb-2 p-4 text-center text-[50px] font-bold sm:text-[65px] md:text-[75px] lg:text-left lg:text-[80px]">
+          <h1 className="mb-2 p-4 text-center text-[50px] font-bold xs:text-[63px] sm:text-[65px] md:text-[75px] lg:text-left lg:text-[80px]">
             Hi, I am Maulana Akbar Yudistika
           </h1>
           <div className="flex w-full items-stretch justify-between border-t border-primary-1000">

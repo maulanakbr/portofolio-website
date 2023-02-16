@@ -15,11 +15,11 @@ const Navbar = () => {
   const date: string = new Date().getFullYear().toString();
 
   return (
-    <nav className="m-4 flex justify-between">
+    <nav className="relative m-4 flex items-center justify-between">
       <span
         className={
           toggle
-            ? "fixed z-20 cursor-pointer p-2 text-[28.43px] font-bold leading-none"
+            ? "fixed top-4 z-20 cursor-pointer p-2 text-[28.43px] font-bold leading-none"
             : "z-20 cursor-pointer p-2 text-[28.43px] font-bold leading-none"
         }
       >
@@ -34,21 +34,21 @@ const Navbar = () => {
             : "hidden lg:flex"
         }
       >
-        <ul className="absolute top-24 right-[6.6rem] sm:top-40 sm:right-[7.2rem] md:right-[7.6rem] lg:static lg:flex lg:items-center lg:justify-center lg:gap-4">
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold sm:text-[34px] md:text-[40px] lg:text-[14px]">
+        <ul className="absolute top-24 right-[6.6rem] xs:right-[6.6rem] xs:top-32 sm:top-40 sm:right-[7.2rem] md:right-[7.6rem] lg:static lg:flex lg:items-center lg:justify-center lg:gap-4">
+          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
             Home
           </li>
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold sm:text-[34px] md:text-[40px] lg:text-[14px]">
+          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
             About
           </li>
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold sm:text-[34px] md:text-[40px] lg:text-[14px]">
+          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
             Skills
           </li>
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold sm:text-[34px] md:text-[40px] lg:text-[14px]">
+          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
             Projects
           </li>
         </ul>
-        <div className="absolute bottom-0 right-16 grid h-[8rem] place-content-center items-center sm:right-24 md:right-28 lg:hidden">
+        <div className="absolute bottom-0 right-16 grid h-[8rem] place-content-center items-center xs:right-20 sm:right-24 md:right-28 lg:hidden">
           <div className="mb-3 flex justify-center gap-6 lg:mb-0">
             <a
               className="cursor-pointer"
@@ -113,10 +113,10 @@ const Navbar = () => {
         </div>
       ) : (
         <div
-          className="fixed right-4 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 lg:hidden"
+          className="fixed right-4 top-4 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 lg:hidden"
           onClick={() => setToggle(!toggle)}
         >
-          <AiOutlineClose size={34} />
+          <AiOutlineClose size={32} />
         </div>
       )}
     </nav>
