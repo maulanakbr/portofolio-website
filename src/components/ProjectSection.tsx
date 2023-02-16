@@ -6,7 +6,7 @@ import PROJECT_2 from "../assets/projects/project-2.png";
 const ProjectSection = () => {
   return (
     <Container>
-      <div className="max-h-[300vh] w-full lg:h-[120vh]">
+      <div className="mb-10 h-full w-full">
         <h4 className="mb-6 p-2 text-center font-semibold lg:text-left">
           03. Projects
         </h4>

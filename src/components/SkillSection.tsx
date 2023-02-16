@@ -13,11 +13,11 @@ import {
 const SkillSection = () => {
   return (
     <Container>
-      <div className="h-[80vh] w-full md:h-[70vh]">
+      <div className="mb-10 h-full w-full">
         <h4 className="mb-6 p-2 text-center font-semibold lg:text-left">
           02. Skills
         </h4>
-        <div className="grid grid-cols-3 items-center justify-center gap-8 lg:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-3 items-center justify-center gap-6 lg:grid-cols-4 lg:gap-12">
           <SkillCard>
             <SiJavascript size={50} />
           </SkillCard>
