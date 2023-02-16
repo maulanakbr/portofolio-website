@@ -48,7 +48,7 @@ const Navbar = () => {
             Projects
           </li>
         </ul>
-        <div className="absolute bottom-0 right-16 grid h-[8rem] place-content-center items-center xs:bottom-20 xs:right-20 sm:right-24 md:right-28 lg:hidden">
+        <div className="absolute bottom-0 right-16 grid h-[8rem] place-content-center items-center xs:bottom-20 xs:right-[5.5rem] sm:right-24 md:right-28 lg:hidden">
           <div className="mb-3 flex justify-center gap-6 lg:mb-0">
             <a
               className="cursor-pointer"

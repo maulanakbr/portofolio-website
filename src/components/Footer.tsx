@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="text-center text-[13px]">
           &copy; {date}
-          <span className="mx-1 font-semibold">Maulana Akbar Yudistika</span>
+          <span className="mx-1 font-semibold">Maulana Akbar Y</span>
         </div>
       </div>
     </section>
