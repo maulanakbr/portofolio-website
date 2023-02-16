@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <Container>
       <div className="h-[125vh] md:h-[60vh]">
-        <h4 className="mb-6 text-center font-semibold lg:text-left">
+        <h4 className="mb-6 p-2 text-center font-semibold lg:text-left">
           01. About
         </h4>
         <div className="flex w-full items-center justify-center">

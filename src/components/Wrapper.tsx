@@ -6,7 +6,7 @@ type WrapperProps = {
 
 const Wrapper = ({ children }: WrapperProps) => {
   return (
-    <div className="m-auto max-w-[100vw] sm:max-w-[90vw] md:max-w-[80vw]">
+    <div className="my-1 mx-2 max-w-[100vw] sm:max-w-[200vw] md:max-w-[80vw]">
       {children}
     </div>
   );

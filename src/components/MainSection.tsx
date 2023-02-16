@@ -1,9 +1,8 @@
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Container from "./Container";
 
 const MainSection = () => {
   return (
-    <section className="mb-12 lg:px-20">
+    <section className="mb-12 px-2 lg:px-20">
       <div className="flex h-[83vh] w-full items-center justify-center">
         <div className="grid w-full md:w-[70vw]">
           <h1 className="mb-2 p-4 text-center font-bold md:text-left">
