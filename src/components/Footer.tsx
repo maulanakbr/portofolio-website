@@ -10,9 +10,9 @@ const Footer = () => {
   const date: string = new Date().getFullYear().toString();
 
   return (
-    <section className="max-h-[40vh] w-full items-center justify-center border-t">
-      <div className="grid h-[10rem] place-content-center items-center md:flex md:h-[6rem] md:justify-between">
-        <div className="mb-4 flex justify-center gap-6 md:mb-0">
+    <section className="max-h-[40vh] w-full items-center justify-center border-t border-primary-1000">
+      <div className="grid h-[8rem] place-content-center items-center lg:flex lg:h-[6rem] lg:justify-between">
+        <div className="mb-4 flex justify-center gap-6 lg:mb-0">
           <a
             className="cursor-pointer"
             href="https://www.instagram.com/shibuya7days/"
@@ -63,7 +63,6 @@ const Footer = () => {
           &copy; {date}
           <span className="mx-1 font-semibold">Maulana Akbar Yudistika</span>
         </div>
-        {/* <span>Built with React.</span> */}
       </div>
     </section>
   );
