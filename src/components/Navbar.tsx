@@ -30,75 +30,77 @@ const Navbar = () => {
       <div
         className={
           toggle
-            ? "fixed top-0 left-0 z-10 h-screen w-full bg-primary-600 lg:hidden"
-            : "hidden lg:flex"
+            ? "fixed top-0 left-0 z-10 h-screen w-full bg-primary-600 xl:hidden"
+            : "hidden xl:flex"
         }
       >
-        <ul className="absolute top-24 right-[6.6rem] xs:right-[6.6rem] xs:top-32 sm:top-40 sm:right-[7.2rem] md:right-[7.6rem] lg:static lg:flex lg:items-center lg:justify-center lg:gap-4">
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
-            Home
-          </li>
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
-            About
-          </li>
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
-            Skills
-          </li>
-          <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] lg:text-[14px]">
-            Projects
-          </li>
-        </ul>
-        <div className="absolute bottom-0 right-16 grid h-[8rem] place-content-center items-center xs:bottom-20 xs:right-[5.5rem] sm:right-24 md:right-28 lg:hidden">
-          <div className="mb-3 flex justify-center gap-6 lg:mb-0">
-            <a
-              className="cursor-pointer"
-              href="https://www.instagram.com/shibuya7days/"
-              aria-label="Instagram"
-              target="blank"
-              rel="noreferrer"
-            >
-              <RiInstagramLine size={19} />
-            </a>
-            <a
-              className="cursor-pointer"
-              href="https://linkedin.com/in/maulanakbr"
-              aria-label="LinkedIn"
-              target="blank"
-              rel="noreferrer"
-            >
-              <RiLinkedinBoxLine size={19} />
-            </a>
-            <a
-              className="cursor-pointer"
-              href="https://github.com/maulanakbr"
-              aria-label="GitHub"
-              target="blank"
-              rel="noreferrer"
-            >
-              <RiGithubLine size={19} />
-            </a>
-            <a
-              className="cursor-pointer"
-              href="https://wa.me/6288741076707"
-              aria-label="Instagram"
-              target="blank"
-              rel="noreferrer"
-            >
-              <RiWhatsappLine size={19} />
-            </a>
-            <a
-              className="cursor-pointer"
-              href="mailto:yudistika.akbar@gmail.com"
-              aria-label="Instagram"
-              target="blank"
-              rel="noreferrer"
-            >
-              <RiMailLine size={19} />
-            </a>
-          </div>
-          <div className="text-center text-[13px]">
-            &copy; {date}
-            <span className="mx-1 font-semibold">Maulana Akbar Y</span>
+        <div className="grid h-full place-content-center items-center justify-center border">
+          <ul className="flex-col xl:static xl:flex xl:items-center xl:justify-center xl:gap-4">
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
+              Home
+            </li>
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
+              About
+            </li>
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
+              Skills
+            </li>
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
+              Projects
+            </li>
+          </ul>
+          <div className="grid h-[8rem] place-content-center items-center xl:hidden">
+            <div className="mb-3 flex justify-center gap-6 xl:mb-0">
+              <a
+                className="cursor-pointer"
+                href="https://www.instagram.com/shibuya7days/"
+                aria-label="Instagram"
+                target="blank"
+                rel="noreferrer"
+              >
+                <RiInstagramLine size={19} />
+              </a>
+              <a
+                className="cursor-pointer"
+                href="https://linkedin.com/in/maulanakbr"
+                aria-label="LinkedIn"
+                target="blank"
+                rel="noreferrer"
+              >
+                <RiLinkedinBoxLine size={19} />
+              </a>
+              <a
+                className="cursor-pointer"
+                href="https://github.com/maulanakbr"
+                aria-label="GitHub"
+                target="blank"
+                rel="noreferrer"
+              >
+                <RiGithubLine size={19} />
+              </a>
+              <a
+                className="cursor-pointer"
+                href="https://wa.me/6288741076707"
+                aria-label="Instagram"
+                target="blank"
+                rel="noreferrer"
+              >
+                <RiWhatsappLine size={19} />
+              </a>
+              <a
+                className="cursor-pointer"
+                href="mailto:yudistika.akbar@gmail.com"
+                aria-label="Instagram"
+                target="blank"
+                rel="noreferrer"
+              >
+                <RiMailLine size={19} />
+              </a>
+            </div>
+            <div className="text-center text-[13px]">
+              &copy; {date}
+              <span className="mx-1 font-semibold">Maulana Akbar Y</span>
+            </div>
           </div>
         </div>
       </div>
@@ -106,14 +108,14 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {!toggle ? (
         <div
-          className="cursor-pointer p-2 lg:hidden"
+          className="cursor-pointer p-2 xl:hidden"
           onClick={() => setToggle(!toggle)}
         >
           <SlMenu size={29} />
         </div>
       ) : (
         <div
-          className="fixed right-4 top-4 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 lg:hidden"
+          className="fixed right-4 top-4 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 xl:hidden"
           onClick={() => setToggle(!toggle)}
         >
           <AiOutlineClose size={32} />

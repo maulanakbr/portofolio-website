@@ -7,10 +7,10 @@ const ProjectSection = () => {
   return (
     <Container>
       <div className="mb-10 h-full w-full">
-        <h4 className="mb-6 p-2 text-center font-semibold lg:text-left">
+        <h4 className="mb-6 p-2 text-center font-semibold xl:text-left">
           03. Projects
         </h4>
-        <div className="lg:flex lg:gap-8">
+        <div className="xl:flex xl:gap-8">
           <ProjectCard
             name="Movie App"
             projectId={1}

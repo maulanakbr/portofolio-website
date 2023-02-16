@@ -14,9 +14,9 @@ const ProjectCard = ({
   usingLibs,
 }: ProjectCardProps) => {
   return (
-    <section className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-lg outline outline-2 outline-offset-4 sm:w-[80vw] md:w-[78vw] lg:mx-0 lg:mb-4 lg:h-[72vh] lg:w-[20vw] hover:lg:h-[90vh] xl:w-[24vw]">
+    <section className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-xl outline outline-2 outline-offset-4 sm:w-[80vw] md:w-[78vw] lg:w-[70vw] xl:mx-0 xl:mb-4 xl:h-[72vh] xl:w-[24vw] hover:xl:h-[90vh]">
       <div className="h-full w-full flex-col">
-        <div className="group relative mb-4 h-[40vh] overflow-hidden hover:h-[65vh] lg:h-[50vh]">
+        <div className="group relative mb-4 h-[40vh] overflow-hidden hover:h-[65vh] xl:h-[50vh]">
           <a href={webUrl} aria-label={name} target="blank" rel="noreferrer">
             <img
               className="block h-full w-full object-fill blur-sm group-hover:blur-none group-hover:transition-all group-hover:delay-300 group-hover:ease-in"
@@ -33,7 +33,7 @@ const ProjectCard = ({
         <a href={webUrl} aria-label={name} target="blank" rel="noreferrer">
           <div className="flex items-center justify-between">
             <span className="px-4 text-[18px] font-semibold">{name}</span>
-            <hr className="w-[20vw] border-primary-1000 lg:w-[10vw]" />
+            <hr className="w-[20vw] border-primary-1000 xl:w-[10vw]" />
           </div>
         </a>
         <ul className="flex flex-wrap gap-5 p-4">
