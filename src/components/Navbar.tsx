@@ -55,7 +55,7 @@ const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <RiInstagramLine size={23} />
+              <RiInstagramLine size={19} />
             </a>
             <a
               className="cursor-pointer"
@@ -64,7 +64,7 @@ const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <RiLinkedinBoxLine size={23} />
+              <RiLinkedinBoxLine size={19} />
             </a>
             <a
               className="cursor-pointer"
@@ -73,7 +73,7 @@ const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <RiGithubLine size={23} />
+              <RiGithubLine size={19} />
             </a>
             <a
               className="cursor-pointer"
@@ -82,7 +82,7 @@ const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <RiWhatsappLine size={23} />
+              <RiWhatsappLine size={19} />
             </a>
             <a
               className="cursor-pointer"
@@ -91,12 +91,12 @@ const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <RiMailLine size={23} />
+              <RiMailLine size={19} />
             </a>
           </div>
-          <div className="text-center text-[12px]">
+          <div className="text-center text-[13px]">
             &copy; {date}
-            <span className="mx-1">Maulana Akbar Yudistika</span>
+            <span className="mx-1 font-semibold">Maulana Akbar Y</span>
           </div>
         </div>
       </ul>
@@ -107,11 +107,11 @@ const Navbar = () => {
           className="cursor-pointer p-2 md:hidden"
           onClick={() => setToggle(!toggle)}
         >
-          <SlMenu size={30} />
+          <SlMenu size={29} />
         </div>
       ) : (
         <div
-          className="fixed right-5 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 md:hidden"
+          className="fixed right-4 z-10 cursor-pointer p-2 active:animate-spin active:duration-300 md:hidden"
           onClick={() => setToggle(!toggle)}
         >
           <AiOutlineClose size={35} />

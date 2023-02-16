@@ -10,13 +10,17 @@ const AboutSection = () => {
         </h4>
         <div className="flex w-full items-center justify-center">
           <p className="mb-3 text-center text-[18px] leading-[3rem] md:text-[21px] lg:text-left">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-            recusandae sapiente error nisi voluptatibus assumenda voluptates
-            molestias, totam vitae dignissimos minus laboriosam quidem quod
-            soluta. Vero laudantium nobis, exercitationem ea iure voluptatem
-            quibusdam debitis eum aperiam corrupti? Excepturi hic illo non
-            repellat rerum voluptatibus accusamus, placeat in et dolores.
-            Reiciendis?
+            Hi, my name is Maulana Akbar Yudistika. I enjoy working in the field
+            of technology, mainly in the context of web development. I have been
+            into various fascinating web development topics since I passionately
+            had the opportunity to enroll Digital Talent Scholarship program
+            held by the{" "}
+            <span className="italic">
+              Ministry of Communications and Informatics{" "}
+            </span>{" "}
+            a year ago. It was a great impression and experience that helped me
+            learn and focus on some basic fundamental things that are required
+            to grow as a professional front-end web developer in the future.
           </p>
         </div>
       </div>

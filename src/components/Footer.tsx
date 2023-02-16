@@ -11,8 +11,8 @@ const Footer = () => {
 
   return (
     <section className="max-h-[40vh] w-full items-center justify-center border-t">
-      <div className="grid h-[8rem] place-content-center items-center md:flex md:h-[5rem] md:justify-between">
-        <div className="mb-3 flex justify-center gap-6 md:mb-0">
+      <div className="grid h-[10rem] place-content-center items-center md:flex md:h-[6rem] md:justify-between">
+        <div className="mb-4 flex justify-center gap-6 md:mb-0">
           <a
             className="cursor-pointer"
             href="https://www.instagram.com/shibuya7days/"
@@ -20,7 +20,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiInstagramLine size={23} />
+            <RiInstagramLine size={19} />
           </a>
           <a
             className="cursor-pointer"
@@ -29,7 +29,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiLinkedinBoxLine size={23} />
+            <RiLinkedinBoxLine size={19} />
           </a>
           <a
             className="cursor-pointer"
@@ -38,7 +38,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiGithubLine size={23} />
+            <RiGithubLine size={19} />
           </a>
           <a
             className="cursor-pointer"
@@ -47,7 +47,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiWhatsappLine size={23} />
+            <RiWhatsappLine size={19} />
           </a>
           <a
             className="cursor-pointer"
@@ -56,12 +56,12 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiMailLine size={23} />
+            <RiMailLine size={19} />
           </a>
         </div>
-        <div className="text-center text-[12px]">
+        <div className="text-center text-[13px]">
           &copy; {date}
-          <span className="mx-1">Maulana Akbar Yudistika</span>
+          <span className="mx-1 font-semibold">Maulana Akbar Yudistika</span>
         </div>
         {/* <span>Built with React.</span> */}
       </div>
