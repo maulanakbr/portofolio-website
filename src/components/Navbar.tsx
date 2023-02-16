@@ -15,7 +15,7 @@ const Navbar = () => {
   const date: string = new Date().getFullYear().toString();
 
   return (
-    <nav className="my-4 flex justify-between">
+    <nav className="m-4 flex justify-between">
       <span
         className={
           toggle
