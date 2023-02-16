@@ -4,7 +4,7 @@ import IMG_02 from "../assets/img02.jpeg";
 const AboutSection = () => {
   return (
     <Container>
-      <div className="h-[100vh] md:h-[60vh]">
+      <div className="h-[125vh] md:h-[60vh]">
         <h4 className="mb-6 text-center font-semibold lg:text-left">
           01. About
         </h4>
