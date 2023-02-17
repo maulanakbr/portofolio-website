@@ -18,12 +18,17 @@ const SkillSwiper = () => {
   return (
     <Swiper
       spaceBetween={30}
-      slidesPerView={3}
+      slidesPerView={1}
       modules={[Pagination, Navigation]}
       pagination={{ type: "progressbar" }}
       navigation
       breakpoints={{
         320: {
+          navigation: {
+            enabled: false,
+          },
+        },
+        360: {
           slidesPerView: 1,
           spaceBetween: 20,
           navigation: {
@@ -32,42 +37,43 @@ const SkillSwiper = () => {
         },
         800: {
           slidesPerView: 3,
+          navigation: { enabled: true },
         },
       }}
     >
       <SwiperSlide>
         <SkillCard>
-          <SiJavascript size={80} />
+          <SiJavascript size={95} />
         </SkillCard>
       </SwiperSlide>
       <SwiperSlide>
         <SkillCard>
-          <SiHtml5 size={80} />
+          <SiHtml5 size={95} />
         </SkillCard>
       </SwiperSlide>
       <SwiperSlide>
         <SkillCard>
-          <SiCss3 size={80} />
+          <SiCss3 size={95} />
         </SkillCard>
       </SwiperSlide>
       <SwiperSlide>
         <SkillCard>
-          <SiTypescript size={80} />
+          <SiTypescript size={95} />
         </SkillCard>
       </SwiperSlide>
       <SwiperSlide>
         <SkillCard>
-          <SiReact size={80} />
+          <SiReact size={95} />
         </SkillCard>
       </SwiperSlide>
       <SwiperSlide>
         <SkillCard>
-          <SiTailwindcss size={80} />
+          <SiTailwindcss size={95} />
         </SkillCard>
       </SwiperSlide>
       <SwiperSlide>
         <SkillCard>
-          <SiExpress size={80} />
+          <SiExpress size={95} />
         </SkillCard>
       </SwiperSlide>
     </Swiper>

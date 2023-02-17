@@ -44,13 +44,23 @@
   }
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #191919 !important;
+@layer components {
+  .swiper {
+    @apply rounded-lg shadow-lg !important;
+  }
+
+  activeNav {
+    @apply border;
+  }
 }
 
 .swiper-wrapper {
-  height: 30vh !important;
+  height: 40vh !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #191919 !important;
 }
 
 .swiper-pagination {

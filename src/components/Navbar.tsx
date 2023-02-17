@@ -8,11 +8,21 @@ import {
   RiWhatsappLine,
   RiMailLine,
 } from "react-icons/ri";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [scrollClick, setScrollClick] = useState(false);
 
   const date: string = new Date().getFullYear().toString();
+
+  const handleClick = (): void => {
+    let currentWidth: number = window.innerWidth;
+
+    currentWidth > 1280
+      ? setScrollClick((prevClick) => !prevClick)
+      : setToggle((prevToggle) => !prevToggle);
+  };
 
   return (
     <nav className="relative m-4 flex items-center justify-between">
@@ -36,17 +46,49 @@ const Navbar = () => {
       >
         <div className="grid h-full place-content-center items-center justify-center">
           <ul className="xl:flex xl:items-center xl:justify-center xl:gap-4">
-            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
-              Home
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[28px] sm:text-[31px] md:text-[33px] xl:text-[14px]">
+              <Link
+                to="mainSection"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onClick={handleClick}
+              >
+                Home
+              </Link>
             </li>
-            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
-              About
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[28px] sm:text-[31px] md:text-[33px] xl:text-[14px]">
+              <Link
+                to="aboutSection"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onClick={handleClick}
+              >
+                About
+              </Link>
             </li>
-            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
-              Skills
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[28px] sm:text-[31px] md:text-[33px] xl:text-[14px]">
+              <Link
+                to="skillSection"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onClick={handleClick}
+              >
+                Skills
+              </Link>
             </li>
-            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
-              Projects
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[28px] sm:text-[31px] md:text-[33px] xl:text-[14px]">
+              <Link
+                to="projectSection"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onClick={handleClick}
+              >
+                Projects
+              </Link>
             </li>
           </ul>
           <div className="grid h-[8rem] place-content-center items-center xl:hidden">
@@ -58,7 +100,7 @@ const Navbar = () => {
                 target="blank"
                 rel="noreferrer"
               >
-                <RiInstagramLine size={19} />
+                <RiInstagramLine size={17} />
               </a>
               <a
                 className="cursor-pointer"
@@ -67,7 +109,7 @@ const Navbar = () => {
                 target="blank"
                 rel="noreferrer"
               >
-                <RiLinkedinBoxLine size={19} />
+                <RiLinkedinBoxLine size={17} />
               </a>
               <a
                 className="cursor-pointer"
@@ -76,7 +118,7 @@ const Navbar = () => {
                 target="blank"
                 rel="noreferrer"
               >
-                <RiGithubLine size={19} />
+                <RiGithubLine size={17} />
               </a>
               <a
                 className="cursor-pointer"
@@ -85,7 +127,7 @@ const Navbar = () => {
                 target="blank"
                 rel="noreferrer"
               >
-                <RiWhatsappLine size={19} />
+                <RiWhatsappLine size={17} />
               </a>
               <a
                 className="cursor-pointer"
@@ -94,7 +136,7 @@ const Navbar = () => {
                 target="blank"
                 rel="noreferrer"
               >
-                <RiMailLine size={19} />
+                <RiMailLine size={17} />
               </a>
             </div>
             <div className="text-center text-[13px]">

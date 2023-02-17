@@ -13,7 +13,7 @@ import SkillSwiper from "./SkillSwiper";
 
 const SkillSection = () => {
   return (
-    <Container>
+    <Container id="skillSection">
       <div className="mb-10 h-full w-full">
         <h4 className="mb-6 p-2 text-center font-semibold xl:text-left">
           02. Skills

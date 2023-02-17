@@ -20,7 +20,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiInstagramLine size={19} />
+            <RiInstagramLine size={17} />
           </a>
           <a
             className="cursor-pointer"
@@ -29,7 +29,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiLinkedinBoxLine size={19} />
+            <RiLinkedinBoxLine size={17} />
           </a>
           <a
             className="cursor-pointer"
@@ -38,7 +38,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiGithubLine size={19} />
+            <RiGithubLine size={17} />
           </a>
           <a
             className="cursor-pointer"
@@ -47,7 +47,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiWhatsappLine size={19} />
+            <RiWhatsappLine size={17} />
           </a>
           <a
             className="cursor-pointer"
@@ -56,7 +56,7 @@ const Footer = () => {
             target="blank"
             rel="noreferrer"
           >
-            <RiMailLine size={19} />
+            <RiMailLine size={17} />
           </a>
         </div>
         <div className="text-center text-[13px]">
