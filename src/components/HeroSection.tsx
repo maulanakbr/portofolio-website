@@ -1,6 +1,6 @@
 import { AiOutlineArrowUp } from "react-icons/ai";
 
-const MainSection = () => {
+const HeroSection = () => {
   return (
     <section
       className="mb-10 h-full px-6 sm:px-8 md:px-4 lg:px-28 xl:px-20"
@@ -23,4 +23,4 @@ const MainSection = () => {
   );
 };
 
-export default MainSection;
+export default HeroSection;

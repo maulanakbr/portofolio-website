@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SlMenu } from "react-icons/sl";
 import { AiOutlineClose } from "react-icons/ai";
 import {
@@ -13,19 +13,39 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrollClick, setScrollClick] = useState(false);
+  const [currentScrollValue, setCurrentScrollValue] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0 && window.innerWidth > 1280) {
+        setCurrentScrollValue(true);
+      } else {
+        setCurrentScrollValue(false);
+      }
+    });
+
+    return window.removeEventListener("scroll", () => {
+      setCurrentScrollValue(false);
+    });
+  }, []);
 
   const date: string = new Date().getFullYear().toString();
 
   const handleClick = (): void => {
     let currentWidth: number = window.innerWidth;
-
     currentWidth > 1280
       ? setScrollClick((prevClick) => !prevClick)
       : setToggle((prevToggle) => !prevToggle);
   };
 
   return (
-    <nav className="relative m-4 flex items-center justify-between">
+    <nav
+      className={
+        currentScrollValue
+          ? "relative m-4 flex items-center justify-between shadow-lg xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[79.7vw] xl:bg-primary-100"
+          : "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[79.7vw] xl:bg-primary-100"
+      }
+    >
       <span
         className={
           toggle
@@ -39,12 +59,12 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div
         className={
-          toggle
-            ? "fixed top-0 left-0 z-10 h-screen w-full bg-primary-600 xl:hidden"
-            : "hidden xl:flex"
+          !toggle
+            ? "hidden xl:flex"
+            : "fixed top-0 left-0 z-10 h-screen w-full bg-primary-600 xl:hidden"
         }
       >
-        <div className="grid h-full place-content-center items-center justify-center">
+        <div className="relative grid h-full place-content-center items-center justify-center">
           <ul className="xl:flex xl:items-center xl:justify-center xl:gap-4">
             <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[28px] sm:text-[31px] md:text-[33px] xl:text-[14px]">
               <Link

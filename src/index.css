@@ -46,11 +46,7 @@
 
 @layer components {
   .swiper {
-    @apply rounded-lg shadow-lg !important;
-  }
-
-  activeNav {
-    @apply border;
+    @apply rounded-lg bg-primary-100 shadow-lg !important;
   }
 }
 
