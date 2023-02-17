@@ -34,8 +34,8 @@ const Navbar = () => {
             : "hidden xl:flex"
         }
       >
-        <div className="grid h-full place-content-center items-center justify-center border">
-          <ul className="flex-col xl:static xl:flex xl:items-center xl:justify-center xl:gap-4">
+        <div className="grid h-full place-content-center items-center justify-center">
+          <ul className="xl:flex xl:items-center xl:justify-center xl:gap-4">
             <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[34px] sm:text-[34px] md:text-[40px] xl:text-[14px]">
               Home
             </li>
