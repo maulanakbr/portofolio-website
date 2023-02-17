@@ -44,8 +44,23 @@
   }
 }
 
-/* body {
-  background-image: url("./assets/img01.jpg");
-  background-size: "cover";
-  background-repeat: round;
-} */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #191919 !important;
+}
+
+.swiper-wrapper {
+  height: 30vh !important;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 10px;
+}
+
+:root {
+  --swiper-navigation-size: 35px !important;
+  --swiper-navigation-sides-offset: 20px !important;
+  --swiper-pagination-progressbar-bg-color: #b3b3b0;
+  --swiper-pagination-color: #80807e;
+}
