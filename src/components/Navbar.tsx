@@ -33,16 +33,19 @@ const Navbar = () => {
 
   const handleClick = (): void => {
     let currentWidth: number = window.innerWidth;
-    currentWidth > 1280
-      ? setScrollClick((prevClick) => !prevClick)
-      : setToggle((prevToggle) => !prevToggle);
+
+    if (currentWidth >= 1280) {
+      setScrollClick((prevClick) => !prevClick);
+    } else {
+      setToggle((prevToggle) => !prevToggle);
+    }
   };
 
   return (
     <nav
       className={
         currentScrollValue
-          ? "relative m-4 flex items-center justify-between shadow-lg xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[79.7vw] xl:bg-primary-100"
+          ? "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[80vw] xl:bg-primary-100"
           : "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[79.7vw] xl:bg-primary-100"
       }
     >
@@ -53,7 +56,16 @@ const Navbar = () => {
             : "z-20 cursor-pointer p-2 text-[28.43px] font-bold leading-none"
         }
       >
-        MAY
+        <Link
+          to="mainSection"
+          spy={true}
+          smooth="easeInQuint"
+          offset={-100}
+          duration={1000}
+          onClick={handleClick}
+        >
+          MAY
+        </Link>
       </span>
 
       {/* Desktop Menu */}
@@ -70,8 +82,9 @@ const Navbar = () => {
               <Link
                 to="mainSection"
                 spy={true}
-                smooth={true}
-                duration={500}
+                smooth="easeInQuint"
+                offset={-100}
+                duration={1000}
                 onClick={handleClick}
               >
                 Home
@@ -81,9 +94,11 @@ const Navbar = () => {
               <Link
                 to="aboutSection"
                 spy={true}
-                smooth={true}
-                duration={500}
+                smooth="linear"
+                duration={1000}
+                offset={-150}
                 onClick={handleClick}
+                activeClass="text-primary-500"
               >
                 About
               </Link>
@@ -92,9 +107,11 @@ const Navbar = () => {
               <Link
                 to="skillSection"
                 spy={true}
-                smooth={true}
-                duration={500}
+                smooth="linear"
+                duration={1000}
+                offset={-150}
                 onClick={handleClick}
+                activeClass="text-primary-500"
               >
                 Skills
               </Link>
@@ -103,9 +120,11 @@ const Navbar = () => {
               <Link
                 to="projectSection"
                 spy={true}
-                smooth={true}
-                duration={500}
+                smooth="linear"
+                duration={1000}
+                offset={-50}
                 onClick={handleClick}
+                activeClass="text-primary-500"
               >
                 Projects
               </Link>

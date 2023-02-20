@@ -4,8 +4,8 @@ const AboutSection = () => {
   return (
     <Container id="aboutSection">
       <div className="mb-10 h-full w-full">
-        <h4 className="mb-6 p-2 text-center font-semibold xl:text-left">
-          01. About
+        <h4 className="mb-6 py-2 text-center font-semibold xl:text-left">
+          About Me
         </h4>
         <div className="flex w-full items-center justify-center">
           <p className="text-center text-[18px] leading-[3rem] md:text-[21px] lg:leading-[3.5rem] xl:text-left">

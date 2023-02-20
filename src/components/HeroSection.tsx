@@ -3,7 +3,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 const HeroSection = () => {
   return (
     <section
-      className="mb-10 h-full px-6 sm:px-8 md:px-4 lg:px-28 xl:px-20"
+      className="mb-10 h-full px-6 sm:px-8 md:px-4 lg:px-28 xl:my-16 xl:px-20"
       id="mainSection"
     >
       <div className="flex h-[83vh] w-full items-center justify-center">

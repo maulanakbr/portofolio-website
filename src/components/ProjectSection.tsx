@@ -7,8 +7,8 @@ const ProjectSection = () => {
   return (
     <Container id="projectSection">
       <div className="mb-10 h-full w-full">
-        <h4 className="mb-6 p-2 text-center font-semibold xl:text-left">
-          03. Projects
+        <h4 className="mb-6 py-2 text-center font-semibold xl:text-left">
+          Recent Projects
         </h4>
         <div className="xl:flex xl:gap-8">
           <ProjectCard
