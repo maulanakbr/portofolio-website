@@ -46,15 +46,15 @@
 
 @layer components {
   .swiper {
-    @apply rounded-lg bg-primary-400 p-2 shadow-lg !important;
+    @apply rounded-lg bg-primary-400 p-4 shadow-lg !important;
   }
 }
 
-div.load-animation {
-  animation-duration: 5s;
+.load-animation {
+  padding: 2rem;
+  animation-duration: 10s;
   animation-name: trial;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  animation-play-state: running;
 }
 
 @keyframes trial {
@@ -79,12 +79,19 @@ div.load-animation {
 
 .swiper-pagination {
   position: relative !important;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
 }
 
 :root {
   --swiper-navigation-size: 35px !important;
-  --swiper-navigation-sides-offset: 20px !important;
-  --swiper-pagination-progressbar-bg-color: #b3b3b0;
+  --swiper-navigation-sides-offset: 35px !important;
+  --swiper-pagination-progressbar-bg-color: #e6e6e3;
   --swiper-pagination-color: #80807e;
 }

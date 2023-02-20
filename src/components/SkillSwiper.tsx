@@ -17,22 +17,17 @@ import {
 const SkillSwiper = () => {
   return (
     <Swiper
-      spaceBetween={30}
+      spaceBetween={65}
       slidesPerView={1}
       modules={[Pagination, Navigation]}
       pagination={{ type: "progressbar" }}
       navigation
       breakpoints={{
-        250: {
+        360: {
           slidesPerView: 1,
-          spaceBetween: 20,
-          navigation: {
-            enabled: false,
-          },
         },
         800: {
           slidesPerView: 3,
-          navigation: { enabled: true },
         },
       }}
     >

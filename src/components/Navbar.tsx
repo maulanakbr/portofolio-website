@@ -31,9 +31,9 @@ const Navbar = () => {
 
   const date: string = new Date().getFullYear().toString();
 
-  const handleClick = (): void => {
-    let currentWidth: number = window.innerWidth;
+  let currentWidth: number = window.innerWidth;
 
+  const handleClick = (): void => {
     if (currentWidth >= 1280) {
       setScrollClick((prevClick) => !prevClick);
     } else {
@@ -46,7 +46,7 @@ const Navbar = () => {
       className={
         currentScrollValue
           ? "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[80vw] xl:bg-primary-100"
-          : "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[79.7vw] xl:bg-primary-100"
+          : "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[80vw] xl:bg-primary-100"
       }
     >
       <span
@@ -96,7 +96,7 @@ const Navbar = () => {
                 spy={true}
                 smooth="linear"
                 duration={1000}
-                offset={-150}
+                offset={currentWidth <= 1280 ? 100 : -170}
                 onClick={handleClick}
                 activeClass="text-primary-500"
               >
@@ -109,7 +109,7 @@ const Navbar = () => {
                 spy={true}
                 smooth="linear"
                 duration={1000}
-                offset={-150}
+                offset={currentWidth <= 1280 ? 0 : -150}
                 onClick={handleClick}
                 activeClass="text-primary-500"
               >
@@ -122,7 +122,7 @@ const Navbar = () => {
                 spy={true}
                 smooth="linear"
                 duration={1000}
-                offset={-50}
+                offset={currentWidth <= 1280 ? 150 : -100}
                 onClick={handleClick}
                 activeClass="text-primary-500"
               >

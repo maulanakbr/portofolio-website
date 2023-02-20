@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <Container id="aboutSection">
       <div className="mb-10 h-full w-full">
-        <h4 className="mb-6 py-2 text-center font-semibold xl:text-left">
+        <h4 className="mb-2 py-2 text-center font-semibold xl:text-left">
           About Me
         </h4>
         <div className="flex w-full items-center justify-center">

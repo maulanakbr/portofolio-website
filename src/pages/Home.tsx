@@ -2,15 +2,25 @@ import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
 import SkillSection from "../components/SkillSection";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <section>
+    <motion.section
+      initial={{ x: 500 }}
+      animate={{ x: 0 }}
+      transition={{
+        duration: 1.5,
+        delay: 0.2,
+        type: "spring",
+        bounce: 0.25,
+      }}
+    >
       <HeroSection />
       <AboutSection />
       <SkillSection />
       <ProjectSection />
-    </section>
+    </motion.section>
   );
 };
 
