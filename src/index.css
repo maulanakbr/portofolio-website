@@ -46,7 +46,25 @@
 
 @layer components {
   .swiper {
-    @apply rounded-lg bg-primary-100 p-2 shadow-lg !important;
+    @apply rounded-lg bg-primary-400 p-2 shadow-lg !important;
+  }
+}
+
+div.load-animation {
+  animation-duration: 5s;
+  animation-name: trial;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-play-state: running;
+}
+
+@keyframes trial {
+  from {
+    color: #80807e;
+    rotate: 0deg;
+  }
+  to {
+    color: #191919;
+    rotate: 340deg;
   }
 }
 

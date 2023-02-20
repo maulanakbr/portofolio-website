@@ -5,12 +5,12 @@ import SkillSection from "../components/SkillSection";
 
 const Home = () => {
   return (
-    <div>
+    <section>
       <HeroSection />
       <AboutSection />
       <SkillSection />
       <ProjectSection />
-    </div>
+    </section>
   );
 };
 
