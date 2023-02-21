@@ -46,7 +46,7 @@
 
 @layer components {
   .swiper {
-    @apply rounded-lg bg-primary-400 p-4 shadow-lg !important;
+    @apply w-[80vw] rounded-lg bg-primary-400 p-5 shadow-lg lg:w-full !important;
   }
 }
 
