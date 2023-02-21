@@ -4,9 +4,9 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 const ContactCard = () => {
   return (
     <section className="h-full w-[80vw] rounded-lg shadow-lg outline outline-2 outline-offset-4 lg:w-full">
-      <div className="h-full items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary-400 p-4 lg:flex">
-        <div className="mb-6 grid h-full place-items-center items-start p-4 lg:w-[50%] lg:place-content-around lg:place-items-start">
-          <p className="mb-6 text-center text-[14px] leading-[2.7rem] md:text-[17px] xl:text-left">
+      <div className="h-full w-full items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary-400 p-4 lg:flex">
+        <div className="mb-6 grid h-full place-items-center items-start p-4 lg:w-[50%] lg:place-items-start lg:items-center">
+          <p className="mb-6 text-center text-[18px] leading-[2.8rem] md:text-[21px] xl:text-left">
             As a newcomer, I am excited to level up my experience by doing
             real-life projects. Now I am on my path to finding some
             opportunities to work. My inbox is always open, and I hope to
