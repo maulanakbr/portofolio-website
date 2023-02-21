@@ -5,7 +5,7 @@ const SkillSection = () => {
   return (
     <Container id="skillSection">
       <div className="mb-10 h-full w-full">
-        <h4 className="mb-4 py-2 text-center font-semibold xl:text-left">
+        <h4 className="mb-4 p-4 text-center font-semibold lg:py-2 lg:px-0 xl:text-left">
           What I've Been Learning
         </h4>
         <SkillSwiper />
