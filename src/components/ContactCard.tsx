@@ -18,19 +18,30 @@ const ContactCard = ({ description }: ContactCardProps) => {
           <p className="mb-6 text-center text-[18px] leading-[2.4rem] md:text-[21px] xl:text-left">
             {description}
           </p>
-          <Button>
+          <div className="mt-6 flex w-[7rem] flex-wrap items-center justify-center xl:w-full xl:flex-nowrap xl:justify-start">
+            <Button>
+              <a
+                className="cursor-pointer"
+                href="mailto:yudistika.akbar@gmail.com"
+                aria-label="Instagram"
+                target="blank"
+                rel="noreferrer"
+              >
+                Say Hi
+              </a>
+            </Button>
             <a
-              className="cursor-pointer"
-              href="mailto:yudistika.akbar@gmail.com"
-              aria-label="Instagram"
+              className="mt-2 block h-full cursor-pointer p-4 text-center font-semibold xl:mt-0 xl:ml-6"
+              href="https://drive.google.com/file/d/1ET9xH18Pzwlxn37zlpyiurFZe1Vhl_I0/view?usp=sharing"
+              aria-label="Resume"
               target="blank"
               rel="noreferrer"
             >
-              Say Hi
+              Resume
             </a>
-          </Button>
+          </div>
         </div>
-        <div className="h-full items-center justify-end p-4 lg:flex lg:w-[50%]">
+        <div className="hidden h-full items-center justify-end p-4 lg:flex lg:w-[50%]">
           <div className="group relative w-full overflow-hidden rounded-full outline outline-2 outline-offset-4 hover:outline-none xs:h-[34vh] lg:h-[53vh] lg:w-[26.5vw]">
             <img
               className="block h-full w-full object-cover"
