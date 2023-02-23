@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import PreLoading from "./components/PreLoading";
-import { Helmet } from "react-helmet";
-import Logo from "./assets/logo.svg";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,11 +16,6 @@ function App() {
 
   return (
     <Wrapper>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <link rel="icon" type="image/svg+xml" href={Logo} />
-        <title>Maulana Akbar Yudistika's Site</title>
-      </Helmet>
       {isLoading ? (
         <PreLoading />
       ) : (

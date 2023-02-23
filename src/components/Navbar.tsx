@@ -9,6 +9,7 @@ import {
   RiMailLine,
 } from "react-icons/ri";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -41,13 +42,29 @@ const Navbar = () => {
     }
   };
 
+  const navbarVariants = {
+    hidden: { y: -500 },
+    visible: {
+      y: 0,
+      transition: {
+        duration: 1.5,
+        delay: 0.2,
+        type: "spring",
+        bounce: 0.25,
+      },
+    },
+  };
+
   return (
-    <nav
+    <motion.nav
       className={
         currentScrollValue
           ? "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[80vw] xl:bg-primary-100"
           : "relative m-4 flex items-center justify-between xl:fixed xl:top-0 xl:z-20 xl:m-0 xl:h-[4rem] xl:w-[80vw] xl:bg-primary-100"
       }
+      variants={navbarVariants}
+      initial="hidden"
+      animate="visible"
     >
       <span
         className={
@@ -109,7 +126,7 @@ const Navbar = () => {
                 spy={true}
                 smooth="linear"
                 duration={1000}
-                offset={currentWidth <= 1280 ? 0 : -150}
+                offset={currentWidth <= 1280 ? 10 : -150}
                 onClick={handleClick}
                 activeClass="text-primary-500"
               >
@@ -171,7 +188,7 @@ const Navbar = () => {
               <a
                 className="cursor-pointer"
                 href="mailto:yudistika.akbar@gmail.com"
-                aria-label="Instagram"
+                aria-label="Email"
                 target="blank"
                 rel="noreferrer"
               >
@@ -202,7 +219,7 @@ const Navbar = () => {
           <AiOutlineClose size={32} />
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 

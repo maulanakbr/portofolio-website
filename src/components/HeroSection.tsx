@@ -1,6 +1,9 @@
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
+  let currentWidth: number = window.innerWidth;
+
   return (
     <section
       className="mb-10 h-full px-6 sm:px-8 md:px-4 lg:px-28 xl:my-16 xl:px-20"
@@ -14,7 +17,19 @@ const HeroSection = () => {
           <div className="flex w-full items-stretch justify-between border-t border-primary-1000">
             <h3 className="px-4 py-4 text-primary-600">Web Developer</h3>
             <span className="flex items-center justify-center border-l border-primary-1000">
-              <AiOutlineArrowUp className="rotate-[-40deg]" size={74} />
+              <Link
+                to="contactSection"
+                spy={true}
+                smooth="linear"
+                duration={1000}
+                offset={currentWidth <= 1280 ? 250 : -50}
+                activeClass="text-primary-500"
+              >
+                <AiOutlineArrowUp
+                  className="rotate-[-40deg] cursor-pointer"
+                  size={74}
+                />
+              </Link>
             </span>
           </div>
         </div>

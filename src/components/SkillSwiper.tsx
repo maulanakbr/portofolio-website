@@ -13,6 +13,7 @@ import {
   SiTailwindcss,
   SiExpress,
 } from "react-icons/si";
+import { Variants } from "framer-motion";
 
 const SkillSwiper = () => {
   return (

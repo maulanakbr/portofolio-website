@@ -1,18 +1,19 @@
 import IMG_02 from "../assets/img02.jpeg";
-import { AiOutlineArrowUp } from "react-icons/ai";
+import Button from "./Button";
 
-const ContactCard = () => {
+type ContactCardProps = {
+  description: string;
+};
+
+const ContactCard = ({ description }: ContactCardProps) => {
   return (
     <section className="h-full w-[80vw] rounded-lg shadow-lg outline outline-2 outline-offset-4 lg:w-full">
       <div className="h-full w-full items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary-400 p-4 lg:flex">
         <div className="mb-6 grid h-full place-items-center items-start p-4 lg:w-[50%] lg:place-items-start lg:items-center">
-          <p className="mb-6 text-center text-[18px] leading-[2.8rem] md:text-[21px] xl:text-left">
-            As a newcomer, I am excited to level up my experience by doing
-            real-life projects. Now I am on my path to finding some
-            opportunities to work. My inbox is always open, and I hope to
-            contribute and give my best to your following projects soon.
+          <p className="mb-6 text-center text-[18px] leading-[2.4rem] md:text-[21px] xl:text-left">
+            {description}
           </p>
-          <button className="h-[3rem] w-[6.8rem] rounded-lg bg-primary-200 font-semibold shadow-md">
+          <Button>
             <a
               className="cursor-pointer"
               href="mailto:yudistika.akbar@gmail.com"
@@ -22,19 +23,17 @@ const ContactCard = () => {
             >
               Say Hi
             </a>
-          </button>
+          </Button>
         </div>
-        <div className="hidden h-full items-center justify-center p-4 lg:flex lg:w-[50%]">
-          <div className="relative h-[37vh] w-full overflow-hidden rounded-full outline outline-2 outline-offset-4 xs:h-[34vh] lg:h-[60vh] lg:w-[30vw]">
+        <div className="hidden h-full items-center justify-end p-4 lg:flex lg:w-[50%]">
+          <div className="group relative w-full overflow-hidden rounded-full outline outline-2 outline-offset-4 hover:outline-none xs:h-[34vh] lg:h-[53vh] lg:w-[26.5vw]">
             <img
               className="block h-full w-full object-cover"
               src={IMG_02}
               alt="IMG_02"
             />
-            <div className="absolute top-0 flex h-full w-full items-center justify-center bg-primary-600 hover:mix-blend-color">
-              <div className="rotate-[-40deg]">
-                <AiOutlineArrowUp size={120} />
-              </div>
+            <div className="absolute top-0 flex h-full w-full items-center justify-center bg-primary-600 mix-blend-color group-hover:hidden group-hover:transition-all group-hover:delay-300">
+              <br />
             </div>
           </div>
         </div>
