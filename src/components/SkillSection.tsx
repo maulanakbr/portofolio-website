@@ -1,26 +1,17 @@
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Container from "./Container";
 import SkillSwiper from "./SkillSwiper";
+import { titleVariants } from "../config/motion";
 
 const SkillSection = () => {
-  const titleVariants: Variants = {
-    offscreen: {
-      opacity: 0,
-    },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        duration: 2,
-        delay: 0.25,
-        type: "spring",
-        bounce: 0.25,
-      },
-    },
-  };
-
   return (
     <Container id="skillSection">
-      <div className="mb-10 h-full w-full">
+      <motion.div
+        className="mb-10 h-full w-full"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: false, amount: 0.5 }}
+      >
         <motion.h4
           className="mb-4 p-4 text-center font-semibold lg:py-2 lg:px-0 xl:text-left"
           variants={titleVariants}
@@ -28,7 +19,7 @@ const SkillSection = () => {
           What I Have Been Learning
         </motion.h4>
         <SkillSwiper />
-      </div>
+      </motion.div>
     </Container>
   );
 };

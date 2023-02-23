@@ -1,22 +1,20 @@
-import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { MutableRefObject, ReactNode } from "react";
 
 type ContainerProps = {
   children: ReactNode;
   id: string;
+  refObj?: MutableRefObject<null>;
 };
 
-const Container = ({ children, id }: ContainerProps) => {
+const Container = ({ children, id, refObj }: ContainerProps) => {
   return (
-    <motion.section
+    <section
       className="mb-12 h-full w-full p-8 lg:px-12 xl:px-20"
       id={id}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 1 }}
+      ref={refObj}
     >
       {children}
-    </motion.section>
+    </section>
   );
 };
 

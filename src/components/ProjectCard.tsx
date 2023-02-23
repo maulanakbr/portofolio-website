@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { contentVariants } from "../config/motion";
+
 type ProjectCardProps = {
   name: string;
   projectId: number;
@@ -14,7 +17,10 @@ const ProjectCard = ({
   usingLibs,
 }: ProjectCardProps) => {
   return (
-    <section className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-xl outline outline-2 outline-offset-4 sm:w-[80vw] md:w-[78vw] lg:w-[70vw] xl:mx-0 xl:mb-4 xl:h-[72vh] xl:w-[24vw] hover:xl:h-[90vh]">
+    <motion.section
+      className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-xl outline outline-2 outline-offset-4 sm:w-[80vw] md:w-[78vw] lg:w-[70vw] xl:mx-0 xl:mb-4 xl:h-[72vh] xl:w-[24vw] hover:xl:h-[90vh]"
+      variants={contentVariants}
+    >
       <div className="h-full w-full flex-col">
         <div className="group relative mb-4 h-[40vh] overflow-hidden hover:h-[65vh] xl:h-[50vh]">
           <a href={webUrl} aria-label={name} target="blank" rel="noreferrer">
@@ -47,7 +53,7 @@ const ProjectCard = ({
           ))}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,5 +1,7 @@
 import ContactCard from "./ContactCard";
 import Container from "./Container";
+import { motion } from "framer-motion";
+import { titleVariants } from "../config/motion";
 
 const ContactSection = () => {
   const description: string =
@@ -7,14 +9,22 @@ const ContactSection = () => {
 
   return (
     <Container id="contactSection">
-      <div className="mb-10 h-full w-full">
-        <h4 className="mb-4 py-2 text-center font-semibold xl:text-left">
+      <motion.div
+        className="mb-10 h-full w-full"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        <motion.h4
+          className="mb-4 py-2 text-center font-semibold xl:text-left"
+          variants={titleVariants}
+        >
           Get In Touch
-        </h4>
+        </motion.h4>
         <div className="flex w-full items-center justify-center">
           <ContactCard description={description} />
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };

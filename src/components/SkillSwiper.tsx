@@ -13,61 +13,64 @@ import {
   SiTailwindcss,
   SiExpress,
 } from "react-icons/si";
-import { Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import { contentVariants } from "../config/motion";
 
 const SkillSwiper = () => {
   return (
-    <Swiper
-      spaceBetween={65}
-      slidesPerView={1}
-      modules={[Pagination, Navigation]}
-      pagination={{ type: "progressbar" }}
-      navigation
-      breakpoints={{
-        360: {
-          slidesPerView: 1,
-        },
-        800: {
-          slidesPerView: 3,
-        },
-      }}
-    >
-      <SwiperSlide>
-        <SkillCard>
-          <SiJavascript size={95} />
-        </SkillCard>
-      </SwiperSlide>
-      <SwiperSlide>
-        <SkillCard>
-          <SiHtml5 size={95} />
-        </SkillCard>
-      </SwiperSlide>
-      <SwiperSlide>
-        <SkillCard>
-          <SiCss3 size={95} />
-        </SkillCard>
-      </SwiperSlide>
-      <SwiperSlide>
-        <SkillCard>
-          <SiTypescript size={95} />
-        </SkillCard>
-      </SwiperSlide>
-      <SwiperSlide>
-        <SkillCard>
-          <SiReact size={95} />
-        </SkillCard>
-      </SwiperSlide>
-      <SwiperSlide>
-        <SkillCard>
-          <SiTailwindcss size={95} />
-        </SkillCard>
-      </SwiperSlide>
-      <SwiperSlide>
-        <SkillCard>
-          <SiExpress size={95} />
-        </SkillCard>
-      </SwiperSlide>
-    </Swiper>
+    <motion.section variants={contentVariants}>
+      <Swiper
+        spaceBetween={65}
+        slidesPerView={1}
+        modules={[Pagination, Navigation]}
+        pagination={{ type: "progressbar" }}
+        navigation
+        breakpoints={{
+          360: {
+            slidesPerView: 1,
+          },
+          800: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        <SwiperSlide>
+          <SkillCard>
+            <SiJavascript size={95} />
+          </SkillCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SkillCard>
+            <SiHtml5 size={95} />
+          </SkillCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SkillCard>
+            <SiCss3 size={95} />
+          </SkillCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SkillCard>
+            <SiTypescript size={95} />
+          </SkillCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SkillCard>
+            <SiReact size={95} />
+          </SkillCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SkillCard>
+            <SiTailwindcss size={95} />
+          </SkillCard>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SkillCard>
+            <SiExpress size={95} />
+          </SkillCard>
+        </SwiperSlide>
+      </Swiper>
+    </motion.section>
   );
 };
 
