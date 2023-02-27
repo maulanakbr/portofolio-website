@@ -26,10 +26,10 @@ const SkillSwiper = () => {
         pagination={{ type: "progressbar" }}
         navigation
         breakpoints={{
-          360: {
-            slidesPerView: 1,
+          768: {
+            slidesPerView: 2,
           },
-          800: {
+          1280: {
             slidesPerView: 3,
           },
         }}

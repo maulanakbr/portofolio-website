@@ -10,6 +10,7 @@ import {
 } from "react-icons/ri";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import { navbarVariants } from "../config/motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -40,19 +41,6 @@ const Navbar = () => {
     } else {
       setToggle((prevToggle) => !prevToggle);
     }
-  };
-
-  const navbarVariants = {
-    hidden: { y: -500 },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 1.5,
-        delay: 0.2,
-        type: "spring",
-        bounce: 0.25,
-      },
-    },
   };
 
   return (

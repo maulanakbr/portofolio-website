@@ -20,7 +20,7 @@ const ProjectSection = () => {
         >
           Recent Projects
         </motion.h4>
-        <div className="xl:flex xl:gap-8">
+        <div className="lg:flex lg:gap-8">
           <ProjectCard
             name="Movie App"
             projectId={1}

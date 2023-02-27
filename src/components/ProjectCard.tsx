@@ -18,7 +18,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <motion.section
-      className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-xl outline outline-2 outline-offset-4 sm:w-[80vw] md:w-[78vw] lg:w-[70vw] xl:mx-0 xl:mb-4 xl:h-[72vh] xl:w-[24vw] hover:xl:h-[90vh]"
+      className="mx-auto mb-8 flex w-[80vw] flex-wrap items-center justify-center overflow-hidden rounded-xl bg-primary-400 shadow-xl outline outline-2 outline-offset-4 sm:w-[80vw] md:w-[78vw] xl:mx-0 xl:mb-4 xl:h-[72vh] xl:w-[24vw] hover:xl:h-[90vh]"
       variants={contentVariants}
     >
       <div className="h-full w-full flex-col">

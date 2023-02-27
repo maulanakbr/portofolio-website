@@ -16,7 +16,7 @@ const HeroSection = () => {
     >
       <div className="flex h-[83vh] w-full items-center justify-center">
         <div className="grid w-full xl:w-[70vw]">
-          <h1 className="mb-2 p-4 text-center text-[50px] font-bold xs:text-[61px] sm:text-[65px] md:text-[75px] lg:text-[90px] xl:text-left xl:text-[80px]">
+          <h1 className="mb-2 p-4 text-center text-[50px] font-bold xs:text-[61px] sm:text-[65px] md:text-[75px] lg:text-[110px] xl:text-left xl:text-[80px]">
             Hi, I am Maulana Akbar Yudistika
           </h1>
           <div className="flex w-full items-stretch justify-between border-t border-primary-1000">

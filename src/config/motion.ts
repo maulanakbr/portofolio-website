@@ -7,7 +7,7 @@ export const titleVariants: Variants = {
   onscreen: {
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1.5,
       delay: 0.25,
       type: "spring",
       bounce: 0.2,
@@ -22,7 +22,7 @@ export const contentVariants: Variants = {
   onscreen: {
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1.5,
       delay: 0.75,
       type: "spring",
       bounce: 0.2,
@@ -36,6 +36,19 @@ export const heroVariants: Variants = {
   },
   visible: {
     x: 0,
+    transition: {
+      duration: 1.5,
+      delay: 0.2,
+      type: "spring",
+      bounce: 0.25,
+    },
+  },
+};
+
+export const navbarVariants = {
+  hidden: { y: -500 },
+  visible: {
+    y: 0,
     transition: {
       duration: 1.5,
       delay: 0.2,
