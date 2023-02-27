@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import Container from "./Container";
-import SkillSwiper from "./SkillSwiper";
-import { titleVariants } from "../config/motion";
+import Container from "../Container";
+import SkillSwiper from "../SkillSwiper";
+import { titleVariants } from "../../config/motion";
 
 const SkillSection = () => {
   return (

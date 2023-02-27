@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Container from "./Container";
-import { titleVariants, contentVariants } from "../config/motion";
+import Container from "../Container";
+import { titleVariants, contentVariants } from "../../config/motion";
 
 const AboutSection = () => {
   return (

@@ -1,7 +1,7 @@
-import ContactCard from "./ContactCard";
-import Container from "./Container";
+import ContactCard from "../ContactCard";
+import Container from "../Container";
 import { motion } from "framer-motion";
-import { titleVariants } from "../config/motion";
+import { titleVariants } from "../../config/motion";
 
 const ContactSection = () => {
   const description: string =
@@ -16,7 +16,7 @@ const ContactSection = () => {
         viewport={{ once: false, amount: 0.5 }}
       >
         <motion.h4
-          className="mb-4 py-2 text-center font-semibold xl:text-left"
+          className="mb-6 py-2 text-center font-semibold xl:text-left"
           variants={titleVariants}
         >
           Get In Touch

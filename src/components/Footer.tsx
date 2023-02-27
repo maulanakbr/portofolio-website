@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <section className="max-h-[40vh] w-full items-center justify-center border-t border-primary-1000">
-      <div className="m-auto grid h-[8rem] place-content-center items-center gap-4 border lg:w-[30rem] xl:flex xl:h-[6rem] xl:w-full xl:justify-between">
+      <div className="m-auto grid h-[8rem] place-content-center items-center gap-4 lg:w-[30rem] xl:flex xl:h-[6rem] xl:w-full xl:justify-between">
         <div className="flex w-[20rem] items-center justify-center gap-7 xl:mb-0 xl:justify-start">
           <a
             className="cursor-pointer"

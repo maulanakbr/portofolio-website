@@ -1,9 +1,9 @@
-import Container from "./Container";
-import ProjectCard from "./ProjectCard";
-import PROJECT_1 from "../assets/projects/project-1.png";
-import PROJECT_2 from "../assets/projects/project-2.png";
+import Container from "../Container";
+import ProjectCard from "../ProjectCard";
+import PROJECT_1 from "../../assets/projects/project-1.png";
+import PROJECT_2 from "../../assets/projects/project-2.png";
 import { motion } from "framer-motion";
-import { contentVariants, titleVariants } from "../config/motion";
+import { contentVariants, titleVariants } from "../../config/motion";
 
 const ProjectSection = () => {
   return (
