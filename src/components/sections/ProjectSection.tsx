@@ -2,8 +2,9 @@ import Container from "../Container";
 import ProjectCard from "../ProjectCard";
 import PROJECT_1 from "../../assets/projects/project-1.png";
 import PROJECT_2 from "../../assets/projects/project-2.png";
+import PROJECT_3 from "../../assets/projects/project-3.png";
 import { motion } from "framer-motion";
-import { contentVariants, titleVariants } from "../../config/motion";
+import { titleVariants } from "../../config/motion";
 
 const ProjectSection = () => {
   return (
@@ -22,18 +23,25 @@ const ProjectSection = () => {
         </motion.h4>
         <div className="lg:flex lg:gap-8">
           <ProjectCard
-            name="Movie App"
+            name="Movie Desktop App"
             projectId={1}
             image={PROJECT_1}
             webUrl="https://may-movie-project.netlify.app/"
-            usingLibs={["Javascript", "React", "Tailwind", "TMDB API"]}
+            usingLibs={["JavaScript", "React", "Tailwind", "TMDB API"]}
           />
           <ProjectCard
-            name="Crypto App"
+            name="Crypto Desktop App"
             projectId={2}
             image={PROJECT_2}
             webUrl="https://cryptohack.netlify.app/"
-            usingLibs={["Javascript", "React", "Tailwind", "Coin Gecko API"]}
+            usingLibs={["JavaScript", "React", "Tailwind", "Coin Gecko API"]}
+          />
+          <ProjectCard
+            name="Youtube Video Downloader App"
+            projectId={3}
+            image={PROJECT_3}
+            webUrl="https://may-youtube-video-downloader.netlify.app/"
+            usingLibs={["TypeScript", "React", "SASS", "Rapid Api"]}
           />
         </div>
       </motion.div>
