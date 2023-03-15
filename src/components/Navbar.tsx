@@ -26,9 +26,10 @@ const Navbar = () => {
       }
     });
 
-    return window.removeEventListener("scroll", () => {
-      setCurrentScrollValue(false);
-    });
+    return () =>
+      window.removeEventListener("scroll", () => {
+        setCurrentScrollValue(false);
+      });
   }, []);
 
   const date: string = new Date().getFullYear().toString();
@@ -132,6 +133,19 @@ const Navbar = () => {
                 activeClass="text-primary-500"
               >
                 Projects
+              </Link>
+            </li>
+            <li className="cursor-pointer p-2 text-center text-[24px] font-semibold xs:text-[28px] sm:text-[31px] md:text-[33px] xl:text-[14px]">
+              <Link
+                to="contactSection"
+                spy={true}
+                smooth="linear"
+                duration={1000}
+                offset={currentWidth <= 1280 ? 150 : 50}
+                onClick={handleClick}
+                activeClass="text-primary-500"
+              >
+                Contact
               </Link>
             </li>
           </ul>

@@ -13,7 +13,7 @@ const ProjectSection = () => {
         className="mb-10 h-full w-full"
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.3 }}
       >
         <motion.h4
           className="mb-6 py-2 text-center font-semibold xl:text-left"
