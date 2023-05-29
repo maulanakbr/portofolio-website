@@ -9,7 +9,7 @@ type ContainerProps = {
 const Container = ({ children, id, refObj }: ContainerProps) => {
   return (
     <section
-      className="mb-12 h-full w-full p-8 lg:px-12 xl:px-20"
+      className="mb-12 h-full w-full p-8 lg:px-24 xl:px-20"
       id={id}
       ref={refObj}
     >

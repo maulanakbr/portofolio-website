@@ -3,6 +3,7 @@ import ProjectCard from "../ProjectCard";
 import PROJECT_1 from "../../assets/projects/project-1.png";
 import PROJECT_2 from "../../assets/projects/project-2.png";
 import PROJECT_3 from "../../assets/projects/project-3.png";
+import PROJECT_4 from "../../assets/projects/project-4.png";
 import { motion } from "framer-motion";
 import { titleVariants } from "../../config/motion";
 
@@ -42,6 +43,13 @@ const ProjectSection = () => {
             image={PROJECT_3}
             webUrl="https://may-youtube-video-downloader.netlify.app/"
             usingLibs={["TypeScript", "React", "SASS", "Rapid Api"]}
+          />
+          <ProjectCard
+            name="The Smiths Fan Made Site"
+            projectId={4}
+            image={PROJECT_4}
+            webUrl="https://the-smiths-fan-made-site.netlify.app/"
+            usingLibs={["TypeScript", "NextJS", "SASS", "Mock Api"]}
           />
         </div>
       </motion.div>

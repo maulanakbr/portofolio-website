@@ -20,14 +20,14 @@ const SkillSwiper = () => {
   return (
     <motion.section variants={contentVariants}>
       <Swiper
-        spaceBetween={65}
+        spaceBetween={30}
         slidesPerView={1}
         modules={[Pagination, Navigation]}
         pagination={{ type: "progressbar" }}
         navigation
         breakpoints={{
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
           1280: {
             slidesPerView: 3,

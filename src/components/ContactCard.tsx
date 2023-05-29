@@ -10,7 +10,7 @@ type ContactCardProps = {
 const ContactCard = ({ description }: ContactCardProps) => {
   return (
     <motion.section
-      className="h-full w-[80vw] rounded-lg shadow-lg outline outline-2 outline-offset-4 lg:h-[54vh] lg:w-full xl:h-[60vh]"
+      className="h-full w-[80vw] rounded-lg shadow-lg outline outline-2 outline-offset-4 lg:h-[74vh] lg:w-full xl:h-[60vh]"
       variants={contentVariants}
     >
       <div className="h-full w-full items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary-400 p-4 lg:flex lg:p-2">
@@ -32,7 +32,7 @@ const ContactCard = ({ description }: ContactCardProps) => {
             </Button>
             <a
               className="mt-2 block h-full cursor-pointer p-4 text-center font-semibold lg:mt-0 lg:ml-6"
-              href="https://drive.google.com/file/d/1ET9xH18Pzwlxn37zlpyiurFZe1Vhl_I0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Od28daNNbz7EzpBhFHatpOfSkWhLGN35/view?usp=sharing"
               aria-label="Resume"
               target="blank"
               rel="noreferrer"
@@ -42,7 +42,7 @@ const ContactCard = ({ description }: ContactCardProps) => {
           </div>
         </div>
         <div className="hidden h-full items-center justify-end p-4 lg:flex lg:w-[50%]">
-          <div className="group relative w-full overflow-hidden rounded-full outline outline-2 outline-offset-4 hover:outline-none xs:h-[34vh] lg:h-[32vh] lg:w-[40vw] xl:h-[53vh] xl:w-[26.5vw]">
+          <div className="group relative w-full overflow-hidden rounded-full outline outline-2 outline-offset-4 hover:outline-none xs:h-[34vh] lg:h-[60vh] lg:w-[32vw] xl:h-[53vh] xl:w-[26.5vw]">
             <img
               className="block h-full w-full object-cover"
               src={IMG_02}
